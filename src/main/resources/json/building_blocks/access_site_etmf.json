@@ -1,0 +1,25 @@
+{
+	"configuration_type_uuid": "{_CONFIGURATION_TYPE_UUID_}",
+	"role_category_oid": "internal",
+	"name": "access_site_etmf",
+	"permissions": [{
+		"protected_resource_type": "app_role",
+		"operation": "com:mdsol:apps:{_APP_UUID_}"
+	},{
+		"operation": "read"
+	},{
+		"operation": "read_client_divisions"
+	},{
+		"operation": "read_client_division_schemes"
+	},{
+		"operation": "read_study_environments"
+	},{
+		"operation": "read_studies"
+	},{
+		"operation": "access_site_etmf"
+	}],
+	"tags": [
+		"category:rcm", "role:access_site_etmf", "building_block"
+		],
+		"read_only": true
+}

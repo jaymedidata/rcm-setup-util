@@ -1,0 +1,41 @@
+{
+	"configuration_type_uuid": "{_CONFIGURATION_TYPE_UUID_}",
+	"role_category_oid": "internal",
+	"name": "administer_all_aspects_of_rcm",
+	"permissions": [{
+		"operation": "access_task"
+	},{
+		"operation": "read_doc"
+	},{
+		"operation": "upload_doc"
+	},{
+		"operation": "manage_folder"
+	},{
+		"operation": "migrate_doc"
+	},{
+		"operation": "access_report"
+	},{
+		"operation": "browse_folder"
+	},{
+		"operation": "manage_property"
+	},{
+		"operation": "manage_workflow"
+	},{
+		"protected_resource_type": "app_role",
+		"operation": "com:mdsol:apps:{_APP_UUID_}"
+	},{
+		"operation": "read"
+	},{
+		"operation": "read_client_divisions"
+	},{
+		"operation": "read_client_division_schemes"
+	},{
+		"operation": "read_study_environments"
+	},{
+		"operation": "read_studies"
+	}],
+	"tags": [
+		"category:rcm", "role:administer_all_aspects_of_rcm", "building_block"
+		],
+		"read_only": true
+}
