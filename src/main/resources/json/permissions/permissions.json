@@ -1,0 +1,45 @@
+[{
+	"operation": "access_task"
+}, {
+	"operation": "read_doc"
+}, {
+	"operation": "upload_doc"
+}, {
+	"operation": "manage_folder"
+}, {
+	"operation": "migrate_doc"
+}, {
+	"operation": "access_report"
+}, {
+	"operation": "browse_folder"
+}, {
+	"operation": "manage_property"
+}, {
+	"operation": "manage_workflow"
+}, {
+	"operation": "read"
+}, {
+	"operation": "read_client_divisions"
+}, {
+	"operation": "read_client_division_schemes"
+}, {
+	"operation": "read_study_environments"
+}, {
+	"operation": "read_studies"
+}, {
+	"operation": "manage_etmf"
+}, {
+	"operation": "upload_site_artifact"
+}, {
+	"operation": "read"
+}, {
+	"operation": "read_client_divisions"
+}, {
+	"operation": "read_client_division_schemes"
+}, {
+	"operation": "read_study_environments"
+}, {
+	"operation": "read_studies"
+},{
+	"operation": "access_site_etmf"
+}]

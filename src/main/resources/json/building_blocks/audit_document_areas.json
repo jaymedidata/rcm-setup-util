@@ -1,0 +1,29 @@
+{
+	"configuration_type_uuid": "{_CONFIGURATION_TYPE_UUID_}",
+	"role_category_oid": "internal",
+	"name": "audit_document_areas",
+	"permissions": [{
+		"operation": "access_report"
+	},{
+		"operation": "browse_folder"
+	},{
+		"operation": "read_doc"
+	},{
+		"protected_resource_type": "app_role",
+		"operation": "com:mdsol:apps:{_APP_UUID_}"
+	},{
+		"operation": "read"
+	},{
+		"operation": "read_client_divisions"
+	},{
+		"operation": "read_client_division_schemes"
+	},{
+		"operation": "read_study_environments"
+	},{
+		"operation": "read_studies"
+	}],
+	"tags": [
+		"category:rcm", "role:audit_document_areas", "building_block"
+		],
+		"read_only": true
+}

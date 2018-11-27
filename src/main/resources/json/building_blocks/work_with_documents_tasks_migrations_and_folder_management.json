@@ -1,0 +1,35 @@
+{
+	"configuration_type_uuid": "{_CONFIGURATION_TYPE_UUID_}",
+	"role_category_oid": "internal",
+	"name": "work_with_documents_tasks_migrations_and_folder_management",
+	"permissions": [{
+		"operation": "access_task"
+	},{
+		"operation": "browse_folder"
+	},{
+		"operation": "manage_folder"
+	},{
+		"operation": "migrate_doc"
+	},{
+		"operation": "read_doc"
+	},{
+		"operation": "upload_doc"
+	},{
+		"protected_resource_type": "app_role",
+		"operation": "com:mdsol:apps:{_APP_UUID_}"
+	},{
+		"operation": "read"
+	},{
+		"operation": "read_client_divisions"
+	},{
+		"operation": "read_client_division_schemes"
+	},{
+		"operation": "read_study_environments"
+	},{
+		"operation": "read_studies"
+	}],
+	"tags": [
+		"category:rcm", "role:work_with_documents_tasks_migrations_and_folder_management", "building_block"
+		],
+		"read_only": true
+}

@@ -1,0 +1,25 @@
+{
+	"configuration_type_uuid": "{_CONFIGURATION_TYPE_UUID_}",
+	"role_category_oid": "internal",
+	"name": "upload_site_documents_to_etmfs",
+	"permissions": [{
+		"operation": "upload_site_artifact"
+	}, {
+		"protected_resource_type": "app_role",
+		"operation": "com:mdsol:apps:{_APP_UUID_}"
+	},{
+		"operation": "read"
+	},{
+		"operation": "read_client_divisions"
+	},{
+		"operation": "read_client_division_schemes"
+	},{
+		"operation": "read_study_environments"
+	},{
+		"operation": "read_studies"
+	}],
+	"tags": [
+		"category:rcm", "role:upload_site_documents_to_etmfs", "building_block"
+	],
+	"read_only": true
+}

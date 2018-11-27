@@ -1,0 +1,27 @@
+{
+	"configuration_type_uuid": "{_CONFIGURATION_TYPE_UUID_}",
+	"role_category_oid": "internal",
+	"name": "manage_content_areas_document_folder_settings_and_change_requests",
+	"permissions": [{
+		"operation": "manage_property"
+	},{
+		"operation": "manage_workflow"
+	},{
+		"protected_resource_type": "app_role",
+		"operation": "com:mdsol:apps:{_APP_UUID_}"
+	},{
+		"operation": "read"
+	},{
+		"operation": "read_client_divisions"
+	},{
+		"operation": "read_client_division_schemes"
+	},{
+		"operation": "read_study_environments"
+	},{
+		"operation": "read_studies"
+	}],
+	"tags": [
+		"category:rcm", "role:manage_content_areas_document_folder_settings_and_change_requests", "building_block"
+		],
+		"read_only": true
+}
