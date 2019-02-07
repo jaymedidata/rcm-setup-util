@@ -184,7 +184,35 @@ public class SetupService {
 			post(configurationTypeRolesApiUrl, bbPayload, mauthPath);
 		});
 	}
-
+	
+	public void registerAppWithCheckmate(Properties properties, String mauthPath, String appUrl) {
+		Config config = ConfigFactory.parseFile(new File(mauthPath));
+		String appUuid = config.getString("app.uuid");
+		
+		String urlApp = properties.getProperty(SetupConfig.CHECKMATE_API_HOST)  + "/v1/checkmated_apps";
+		String urlAction = properties.getProperty(SetupConfig.CHECKMATE_API_HOST)  + "/v1/checkmated_apps/" + appUuid + "/actions";
+		
+		String appRegistrationJson = FileUtils.getFileContent("json/checkmate/app_registration.json");
+		appRegistrationJson = appRegistrationJson.replace("{_APP_UUID_}", appUuid).replace("{_APP_URL_}", appUrl);
+		post(urlApp, appRegistrationJson, mauthPath);
+		
+		String actionClientDivisionsJson = FileUtils.getFileContent("json/checkmate/action_client_divisions.json");
+		actionClientDivisionsJson = actionClientDivisionsJson.replace("{_APP_UUID_}", appUuid);
+		post(urlAction, actionClientDivisionsJson, mauthPath);
+		
+		String actionStudiesJson = FileUtils.getFileContent("json/checkmate/action_studies.json");
+		actionStudiesJson = actionStudiesJson.replace("{_APP_UUID_}", appUuid);
+		post(urlAction, actionStudiesJson, mauthPath);
+		
+		String actionStudyEnvironmentsJson = FileUtils.getFileContent("json/checkmate/action_study_environments.json");
+		actionStudyEnvironmentsJson = actionStudyEnvironmentsJson.replace("{_APP_UUID_}", appUuid);
+		post(urlAction, actionStudyEnvironmentsJson, mauthPath);
+		
+		String actionStudyEnvironmentSitesJson = FileUtils.getFileContent("json/checkmate/action_study_environment_sites.json");
+		actionStudyEnvironmentSitesJson = actionStudyEnvironmentSitesJson.replace("{_APP_UUID_}", appUuid);
+		post(urlAction, actionStudyEnvironmentSitesJson, mauthPath);
+	}
+	
 	private String post(String apiURL, String payload, String mauthPath) {
 		CloseableHttpClient httpClient = getHttpClient(mauthPath);
 		String apiResponse = null;

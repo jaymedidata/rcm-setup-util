@@ -1,0 +1,12 @@
+{
+	"uuid": "{_APP_UUID_}",
+	"name": "Edge RCM",
+	"base_url": "{_APP_URL_}",
+	"oid": "edge-rcm",
+	"show_study_environment_countries": false,
+	"single_page_app": true,
+	"info_help_url": "https://learn.mdsol.com/display/RCMprd/Medidata+Regulated+Content+Management",
+	"info_help_link_text": "Knowledge Space Home",
+	"video_help_url": "https://learn.mdsol.com/display/RCMprd/RCM+Video+Library",
+	"video_help_link_text": "Show Me Videos"
+}
