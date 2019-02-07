@@ -16,7 +16,12 @@ public enum Task {
 	/**
 	 * Create Building Blocks
 	 */
-	CREATE_BUILDING_BLOCK("create_building_block");
+	CREATE_BUILDING_BLOCK("create_building_block"),
+	
+	/**
+	 * Regigster app with Checkmate 
+	 */
+	CHECKMATE_REGISTRATION("checkmate_registration");
 	
 	@Getter
 	private String taskName;

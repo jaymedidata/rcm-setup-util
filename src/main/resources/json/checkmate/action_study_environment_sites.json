@@ -1,0 +1,13 @@
+{
+	"checkmated_app_uuid": "{_APP_UUID_}",
+	"context": "com:mdsol:study_environment_sites",
+	"label": "Edge RCM",
+	"service_url": "/app",
+	"functionality": "TailoredAction",
+	"oid": "edge-rcm-study-environment-sites",
+	"selectable": true,
+	"permission": "",
+	"spa_group_oid": "edge-rcm",
+	"info_help_url": "https://learn.mdsol.com/display/RCMprd/Documents+in+RCM",
+	"info_help_link_text": "Help on This Page"
+}

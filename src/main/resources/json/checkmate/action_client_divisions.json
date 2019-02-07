@@ -1,0 +1,13 @@
+{
+	"checkmated_app_uuid": "{_APP_UUID_}",
+	"context": "com:mdsol:client_divisions",
+	"label": "Edge RCM",
+	"service_url": "/app",
+	"functionality": "TailoredAction",
+	"oid": "edge-rcm",
+	"selectable": true,
+	"permission": "",
+	"spa_group_oid": "edge-rcm",
+	"info_help_url": "https://learn.mdsol.com/display/RCMprd/Navigation+and+Search+in+RCM",
+	"info_help_link_text": "Help on This Page"
+}

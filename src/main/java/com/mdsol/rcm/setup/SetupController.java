@@ -12,11 +12,9 @@ public class SetupController {
 		String task = args[2];
 		
 		SetupService service = new SetupService();
-		InputStream input = null;
 		Properties prop = new Properties();
 		
-		try {
-			input = new FileInputStream(envProp);
+		try (InputStream input = new FileInputStream(envProp)) {
 			prop.load(input);
 		} catch (Exception e) {
 			System.out.println("Error occurred during reading configuration file: " + e.getMessage());
@@ -42,6 +40,15 @@ public class SetupController {
 
 			String ctUuid = args[3];
 			service.generateBuildingBlocks(prop, mauthPath, ctUuid);
+		}
+		
+		if (task.equalsIgnoreCase(Task.CHECKMATE_REGISTRATION.getTaskName())) {
+			if (args.length != 4) {
+				System.out.println("Invalid command, required arguments: env, task, app url");
+				System.exit(0);
+			}
+			String appUrl = args[3];
+			service.registerAppWithCheckmate(prop, mauthPath, appUrl);
 		}
 		
 		if (task.equalsIgnoreCase(Task.SEND_REQUEST.getTaskName())) {

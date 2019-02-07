@@ -23,6 +23,9 @@ public class SetupConfig {
 	//Dalton API Host
 	public static final String DALTON_API_HOST = "dalton.api.host";
 	
+	//Checkmate API
+	public static final String CHECKMATE_API_HOST = "checkmate.api.host";
+	
 	// AWS config file property keys
 	public static final String PROP_KEY_STUDIES = "prop.key.studies";
 	public static final String PROP_KEY_STUDY_ENVIRONMENT_SITES = "prop.key.study_environment_sites";
